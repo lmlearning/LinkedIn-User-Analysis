@@ -38,7 +38,18 @@ Combines multiple post engagement CSV files into a master engagement list.
 
 **Use Case**: If you've scraped engagement data from multiple posts using Phantombuster/Evaboot, this consolidates them.
 
-### 3. `RESEARCH_FINDINGS.md`
+### 3. `linkedin_scraper_playwright.py` / `linkedin_scraper_selenium.py` ⭐ NEW!
+**DIY engagement scraper** - Scrape YOUR OWN post engagement data for FREE!
+
+**Why this is better than paid tools:**
+- ✅ **FREE** (vs $50-100/month for Phantombuster/Evaboot)
+- ✅ **Your data stays local** (no third-party access)
+- ✅ **Simple setup** (5 minutes)
+- ✅ **Ethical** (it's YOUR data from YOUR account)
+
+See [SCRAPER_GUIDE.md](SCRAPER_GUIDE.md) for detailed instructions.
+
+### 4. `RESEARCH_FINDINGS.md`
 Comprehensive research documentation covering:
 - LinkedIn algorithm behavior (2025)
 - Engagement metrics and benchmarks
@@ -65,16 +76,30 @@ John,Doe,john@email.com,TechCorp,Engineer,15 Jan 2023
 
 ### Optional: Engagement Data
 
-**Option A - Manual Tracking:**
+**Option A - DIY Scraper (RECOMMENDED & FREE):** ⭐
+Scrape YOUR OWN posts using our included browser automation tools:
+
+```bash
+# Install Playwright (one-time)
+pip install playwright
+playwright install chromium
+
+# Scrape your last 20 posts
+python linkedin_scraper_playwright.py --posts 20 --output my_engagement.csv
+```
+
+See [SCRAPER_GUIDE.md](SCRAPER_GUIDE.md) for complete instructions.
+
+**Option B - Manual Tracking:**
 Track who engages with your posts over 2-4 weeks manually.
 
-**Option B - Scraping Tools:**
-Use third-party tools to export post engagers:
+**Option C - Paid Third-Party Tools:**
+If you need large-scale scraping or don't want to run scripts:
 - **Phantombuster** ($59/mo) - LinkedIn Post Commenter and Liker Scraper
 - **Evaboot** ($49/mo) - Export post likers & commenters
 - **TexAu** ($55/mo) - Extract likers from LinkedIn posts
 
-**Expected format:**
+**Expected format (all options):**
 ```csv
 Name,First Name,Last Name,Company,Position
 Sarah Johnson,Sarah,Johnson,DataCo,Data Scientist

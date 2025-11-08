@@ -1,0 +1,13 @@
+# LinkedIn Connection Analyzer - Python Dependencies
+
+# For browser automation scrapers (optional - choose one)
+# Only install if you want to scrape your own post engagement data
+
+# Option 1: Selenium (older, widely used)
+selenium>=4.15.0
+
+# Option 2: Playwright (modern, recommended)
+playwright>=1.40.0
+
+# Note: Core tools (connection_analyzer.py, engagement_tracker.py)
+# have ZERO dependencies - they use Python standard library only!
