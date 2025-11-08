@@ -1,0 +1,62 @@
+# LinkedIn Data Exports (contains personal information)
+Connections.csv
+connections.csv
+*.csv
+
+# Except example files
+!examples/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output files (may contain personal data)
+removal_candidates.csv
+master_engagement.csv
+*_candidates.csv
+*_engagement.csv
+*_engagers.csv
+*_likers.csv
+
+# Logs
+*.log
+
+# Sensitive data
+*.zip
+*.tar.gz
+linkedin-data/
